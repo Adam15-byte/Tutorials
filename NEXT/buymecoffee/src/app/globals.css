@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type="text"],
+textarea {
+  @apply bg-gray-50;
+  @apply block w-full border p-2;
+  @apply rounded-md;
+}
+
+label.input-label {
+  @apply block text-xs mt-2 ml-1 uppercase font-semibold text-gray-400;
+}
+
+body {
+  @apply bg-gray-100 text-gray-800;
+}
+
+button.amount {
+  @apply rounded-full p-4 size-12 border border-yellow-300 flex justify-center items-center;
+  &.active {
+    @apply bg-yellow-300;
+  }
+}
+
+button.crypto {
+  @apply bg-gray-100 p-2 grow rounded-lg text-gray-600;
+  span {
+    @apply block font-semibold leading-5;
+  }
+  p {
+    @apply leading-3 text-xs;
+  }
+}
+
+button.crypto.active {
+  @apply bg-yellow-300/20 border-yellow-300 border text-black;
+}
